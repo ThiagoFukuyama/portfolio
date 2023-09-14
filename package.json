@@ -10,7 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@fontsource/lato": "^5.0.12",
+    "@fontsource-variable/comfortaa": "^5.0.12",
     "astro": "^3.0.13",
     "astro-particles": "^2.10.0",
     "tsparticles": "^2.12.0"

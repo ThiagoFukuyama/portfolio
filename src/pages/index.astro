@@ -42,14 +42,13 @@ import Layout from "../layouts/Layout.astro"
       letter-spacing: 1px;
       word-spacing: 5px;
       text-shadow: 0 0 8px rgba(255, 255, 255, 0.741);
-      font-weight: 200;
+      font-weight: 300;
    }
 
    .subheading {
       font-size: 1.5rem;
-      font-family: monospace;
-      text-shadow: 0 0 2px lightgrey;
-      color: lightgrey;
+      text-shadow: 0 0 4px rgba(255, 255, 255, 0.741);
+      color: rgba(255, 255, 255, 0.888);
       letter-spacing: 1px;
    }
 
@@ -63,14 +62,16 @@ import Layout from "../layouts/Layout.astro"
 
    .button {
       --_transition-timing-function: cubic-bezier(0.61, 0.2, 0.19, 0.97);
+      --_box-shadow-color: rgba(255, 255, 255, 0.9);
       position: relative;
       overflow: hidden;
       text-align: center;
       padding: 0.5rem 1rem;
       background-color: transparent;
-      outline: 1px solid white;
+      outline: transparent;
+      box-shadow: 0 0 6px var(--_box-shadow-color);
       color: white;
-      width: 130px;
+      width: 155px;
       border-radius: 100vw;
       z-index: 1;
       transition: 400ms var(--_transition-timing-function);
@@ -79,7 +80,7 @@ import Layout from "../layouts/Layout.astro"
    .button:hover,
    .button:focus {
       color: black;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.741);
+      box-shadow: 0 0 10px var(--_box-shadow-color);
    }
 
    .button::before {
