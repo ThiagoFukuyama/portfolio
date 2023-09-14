@@ -1,0 +1,57 @@
+---
+import Container from "./Container.astro"
+---
+
+<header class="main-header">
+   <Container>
+      <nav class="nav">
+         <ul class="nav__list">
+            <li><a class="nav__link" href="/">Home</a></li>
+            <li><a class="nav__link" href="/sobre-mim">Sobre mim</a></li>
+            <li><a class="nav__link" href="/projetos">Projetos</a></li>
+            <li><a class="nav__link" href="/habilidades">Habilidades</a></li>
+         </ul>
+      </nav>
+   </Container>
+</header>
+
+<style>
+   .main-header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      width: 100%;
+   }
+
+   .nav {
+      --_padding-y: 1.75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: var(--_padding-y);
+      padding-bottom: var(--_padding-y);
+   }
+
+   .nav__list {
+      display: flex;
+      gap: 3rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+   }
+
+   .nav__link {
+      --_box-shadow-color: rgba(255, 255, 255, 0.741);
+      font-size: 1.15rem;
+      color: rgb(237, 237, 237);
+      transition: 500ms ease;
+      text-shadow: 0 0 5px var(--_box-shadow-color);
+   }
+
+   .nav__link:hover,
+   .nav__link:focus {
+      text-shadow: 0 0 20px var(--_box-shadow-color);
+   }
+</style>

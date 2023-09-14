@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+::selection {
+   background-color: white;
+   color: black;
+}
+
+html,
+body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+
+body {
+   background-image: linear-gradient(to bottom, #0b0b0d, #131316);
+   color: white;
+   line-height: 1.6;
+   font-size: 1.1rem;
+   font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
