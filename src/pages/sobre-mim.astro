@@ -1,7 +1,35 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import Container from "../components/Container.astro";
+import Skill from "../components/Skill.astro";
 ---
 
 <Layout title="Thiago Fukuyama - Sobre Mim">
-   <h1>Sobre Mim</h1>
+   <Container>
+      <h1>Sobre Mim</h1>
+      <p>Desenvolvedor, programador, sonhador ;)</p>
+      <p>
+         Sou Thiago Fukuyama Marcilli, desenvolvedor web e estudante apaixonado pela tecnologia e seus processos. 
+         Tenho formação técnica em Informática para Internet e atualmente estou cursando a graduação em Análise e Desenvolvimento de Sistemas. 
+         Considero-me também um autodidata ávido, sempre em busca de novos conhecimentos e habilidades com o objetivo de aprender a resolver 
+         qualquer tipo de problema.
+      </p>
+      <p>
+         Minha jornada é impulsionada pela paixão pelo processo criativo e pela resolução de problemas. 
+         Coloco um foco especial no polimento e na qualidade em tudo o que crio. 
+         Acredito que, quando bem implementada, a tecnologia tem o poder de melhorar a vida das pessoas 
+         e tornar o mundo mais eficiente e conectado.
+      </p>
+
+      <h1>Habilidades</h1>
+      <Skill skill="HTML" level={4.5} image="/images/skills/html.svg" />
+      <Skill skill="CSS" level={4.5} image="/images/skills/css.svg" />
+      <Skill skill="JavaScript" level={4} image="/images/skills/javascript.svg" />
+      <Skill skill="SASS" level={4.5} image="/images/skills/sass.svg" />
+      <Skill skill="TypeScript" level={4} image="/images/skills/typescript.svg" />
+      <Skill skill="React" level={4} image="/images/skills/react.svg" />
+      <Skill skill="PHP" level={4} image="/images/skills/php.svg" />
+      <Skill skill="SQL" level={3.5} image="/images/skills/sql.svg" />
+      <Skill skill="Java" level={3.5} image="/images/skills/java.svg" />
+   </Container>
 </Layout>
